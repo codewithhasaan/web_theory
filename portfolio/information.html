@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects &amp; Services | Your Name - Web Developer Portfolio</title>
+<!-- PAGE 2: INFORMATION - styled with EMBEDDED CSS -->
+<style>
+  /* Element selector: styles every paragraph and heading */
+  p { color: #1b2a3d; line-height: 1.7; }
+  h1, h2, h3 { color: #12263f; font-family: Georgia, 'Times New Roman', serif; }
+  body { margin: 0; font-family: 'Segoe UI', Arial, sans-serif; background-color: #f4f6fa; }
+  header { background-color: #12263f; color: #fff; text-align: center; padding: 26px 20px 16px; }
+  header h1 { color: #fff; margin: 0; }
+  .tagline { color: #f2b84b; margin: 6px 0 0; }
+  footer p { margin: 0; color: #c9d3e0; }
+  footer a { color: #f2b84b; }
+  nav { background-color: #0c1c2f; text-align: center; padding: 12px 0; }
+  nav a { color: #fff; margin: 0 18px; text-decoration: none; font-weight: bold; }
+  nav a:hover { color: #f2b84b; }
+  main { max-width: 960px; margin: 30px auto; padding: 0 20px; }
+  footer { background-color: #0c1c2f; color: #c9d3e0; text-align: center; padding: 18px; }
+
+  /* ID selector: targets the one project article */
+  #featured-project { background: #fff; padding: 26px; border-radius: 10px; border-left: 6px solid #f2b84b; margin-bottom: 24px; }
+
+  /* Class selector: used on the aside announcement */
+  .notice { background-color: #fff6dc; border: 2px dashed #e0a02a; padding: 18px; border-radius: 8px; margin-bottom: 24px; }
+
+  /* Attribute selector: highlights the table's currency-priced cells */
+  td[data-type="price"] { color: #0b6b3a; font-weight: bold; text-align: right; }
+
+  table { width: 100%; border-collapse: collapse; background: #fff; margin-bottom: 24px; }
+  caption { font-weight: bold; font-size: 1.1rem; padding: 10px; color: #12263f; text-align: left; }
+  th, td { border: 1px solid #8a97a8; padding: 12px; text-align: left; }
+  thead th { background-color: #12263f; color: #fff; }
+  tbody tr:nth-child(even) { background-color: #eef2f8; }
+  .media-box { background: #fff; padding: 20px; border-radius: 10px; margin-bottom: 24px; }
+  audio, video { display: block; width: 100%; max-width: 480px; margin-top: 8px; }
+</style>
+</head>
+<body>
+<!-- Header and navigation -->
+<header>
+  <h1>Projects &amp; Services</h1>
+  <p class="tagline">What I build and how much it costs</p>
+</header>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="information.html">Projects &amp; Services</a>
+  <a href="registration.html">Project Inquiry</a>
+</nav>
+
+<main>
+  <!-- Self-contained project description -->
+  <article id="featured-project">
+    <h2>Featured Project: Student Portfolio Website</h2>
+    <p>A three-page responsive website built with semantic HTML5 and CSS3. It includes an introduction page, a services and pricing page, and a validated inquiry form. The site was published through GitHub Pages and checked with the W3C Markup Validator.</p>
+    <p>Technologies used: HTML5, CSS3, Git and GitHub Pages.</p>
+  </article>
+
+  <!-- Related information -->
+  <aside class="notice">
+    <h3>Announcement</h3>
+    <p>I am taking two new freelance projects for November 2026. Send an inquiry early to reserve a slot.</p>
+  </aside>
+
+  <!-- Services and prices table -->
+  <table>
+    <caption>Web development services and prices</caption>
+    <thead>
+      <tr><th scope="col">Service</th><th scope="col">Delivery time</th><th scope="col">Price (PKR)</th></tr>
+    </thead>
+    <tbody>
+      <tr><th scope="row">Personal portfolio website</th><td>5 days</td><td data-type="price">15,000</td></tr>
+      <tr><th scope="row">Business landing page</th><td>7 days</td><td data-type="price">25,000</td></tr>
+      <tr><th scope="row">Responsive form and table pages</th><td>3 days</td><td data-type="price">8,000</td></tr>
+      <tr><th scope="row">Website redesign</th><td>10 days</td><td data-type="price">35,000</td></tr>
+    </tbody>
+  </table>
+
+  <!-- Multimedia -->
+  <section class="media-box">
+    <h2>Meet My Work</h2>
+    <h3>Audio introduction</h3>
+    <audio controls>
+      <source src="media/intro.wav" type="audio/wav">
+      Your browser does not support the audio element. <a href="media/intro.wav">Download the audio clip</a>.
+    </audio>
+    <h3>Video preview</h3>
+    <video controls width="480" poster="images/profile.webp">
+      <source src="media/demo.mp4" type="video/mp4">
+      Your browser does not support the video element. <a href="media/demo.mp4">Download the video clip</a>.
+    </video>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 Your Name | <a href="mailto:yourname@example.com">yourname@example.com</a></p>
+</footer>
+</body>
+</html>
